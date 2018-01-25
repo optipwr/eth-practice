@@ -22,6 +22,7 @@ beforeEach(async () => {
     inbox.setProvider(provider);
 });
 
+
 describe('Inbox', () => {
     it('deploys a contract', () => {
         assert.ok(inbox.options.address);

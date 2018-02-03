@@ -73,7 +73,7 @@ describe('Lottery Contract', () => {
         }
     });
 
-    it('only manager can call pickWinner', async () => {
+    it('only manager can call pickWinner function', async () => {
         try {
             await lottery.methods.pickWinner().send({
                 from: accounts[1]

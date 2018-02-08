@@ -35,7 +35,7 @@ class App extends Component {
     onClick = async () => {
         const accounts = await web3.eth.getAccounts();
 
-        this.setState({ message: 'Waiting on transaction success..' });
+        this.setState({ message: 'Waiting on transaction success...' });
 
         await lottery.methods.pickWinner().send({
             from: accounts[0]
